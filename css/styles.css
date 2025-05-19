@@ -1,0 +1,29 @@
+body {
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.color-white { color: #fff;}
+.color-green { color: #00b2a9; }
+
+
+footer {
+    background: #212934;
+    color: #fff;
+    padding: 5% 30px 0;
+}
+
+footer .footer-big-text {
+    font-size: 7.5rem;
+    font-style: italic;
+    font-weight: 900;
+    text-align: right;
+}
+
+footer .footer-big-text p {
+    line-height: 6rem;
+    margin-bottom: 0;
+}
