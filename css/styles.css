@@ -216,6 +216,9 @@ footer .footer-bottom {
     }
 }
 @media (max-width: 767px) {
+    header {
+        padding: 0 20px;
+    }
     section#hero {
         padding-top: 65px;
         padding-bottom: 0;
