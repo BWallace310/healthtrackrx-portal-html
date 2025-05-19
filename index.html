@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Health Track RX</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
     <!-- Google Fonts -->
@@ -15,29 +15,167 @@
     <link href="/css/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<h1>Hello, world!</h1>
+<header>
+    <div class="row align-items-center navbar">
+        <div class="col-6">
+            <img class="logo-img" src="/images/logo.png" alt="HealthTraxRX Logo" />
+        </div>
+        <div class="col-6 text-end">
+            <a href="tel:8662873218" class="header-cta-text">Call Us: (866) 287-3218</a>
+        </div>
+    </div>
+</header>
 
-<footer>
-    <div class="row">
-        <div class="col-md-6 col-12">
-            <div class="footer-big-text">
-                <p class="color-white">GETTING</p>
-                <p class="color-white">PEOPLE</p>
-                <p class="color-green">HEALTHIER</p>
-                <p class="color-green">FASTER</p>
+<section id="hero" style="background: url('/images/hero-background.jpg') top center; background-size: cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-12">
+                <div class="login-container">
+                    <h1>Welcome to the HealthTrackRx Client Web Portal</h1>
+                    <form class="login-form">
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label for="Password">Password</label>
+                                <input type="password" id="password" name="password" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/forgot-password" class="forgot-password">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="login-btn">Sign In</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="login-links">
+                        <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fportal.healthtrackrx.com%2F&client_id=746945877079-rirknocck9qcfjq627vd6pqrr4c4adsf.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&access_type=online&approval_prompt=force&state={%22date_format%22:%224%2Fd%2FY%22,%22user_timezone%22:%22-240%22}" class="login-link">Sign in with Google</a>
+                        <span class="login-link-separator"></span>
+                        <a href="https://patient-portal.auth.us-west-2.amazoncognito.com/login?response_type=code&client_id=6c922eg58p8ukd6sm6sc1pdq7j&redirect_uri=https://portal.healthtrackrx.com" class="login-link">Employee Login</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 col-12">
-            Other links
+    </div>
+</section>
+
+<section id="hero-background-mobile" style="background: url('/images/hero-background.jpg') top center; background-size: cover; width: 100%; height: 240px;" class="d-block d-md-none">
+    <!-- This section is for mobile view only -->
+</section>
+
+<section id="headline">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-12 text-center">
+                <img src="/images/announcement-icon.png" alt="Announcements" class="mb-4" />
+                <br />
+                <h2 class="mb-4">Occasional Message to CWP Users Headline</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rutrum urna magna, sit amet sagittis mauris fringilla nec. Vestibulum rutrum, arcu et condimentum pretium, libero ante bibendum felis, vel ullamcorper libero purus ac tortor. Vivamus volutpat, lacus in tempus aliquet, enim massa sodales tellus, at tristique nibh felis eget neque. Vivamus non lectus ut lorem pulvinar cursus. Morbi tincidunt luctus pharetra.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="resources">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12 contact-support text-center">
+                <div class="row justify-content-center h-100">
+                    <div class="col-md-8">
+                        <img src="/images/contact-support-icon.png" alt="Contact Support" />
+                        <p class="mt-2 mb-4 fw-bolder text-uppercase">Contact</p>
+                        <h2>Contact support</h2>
+                        <p>Do you need assistance? Let us help you!</p>
+                        <p><a href="tel:8662873218" class="color-black">Call Us: 866-287-3218</a></p>
+                        <p class="fw-bold mb-0">Hours of Operation:</p>
+                        <p class="fw-bold mb-0">MON-FRI: 8am to 8pm ET</p>
+                        <p class="fw-bold mb-">SAT: 9:30am to 6pm ET</p>
+                        <a href="tel:8662873218" class="btn btn-secondary">CALL US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 tools-and-resources text-center">
+                <div class="row justify-content-center h-100">
+                    <div class="col-md-8 d-flex justify-content-between align-items-center flex-column">
+                        <div>
+                            <img src="/images/tools-and-resources-icon.png" alt="Tools and Resources" />
+                            <p class="mt-2 mb-4 fw-bolder text-uppercase">Education</p>
+                            <h2>Tools + Resources</h2>
+                            <p>Visit HealthTrackRx University, your on-demand resource for infection testing made easy.</p>
+                        </div>
+                        <div>
+                            <a href="https://www.healthtrackrx.com/htrxu/" class="btn btn-primary">HealthTrackRx University</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-xl-4 col-12 order-2 order-xl-1">
+                    <div class="footer-big-text">
+                        <p class="color-white">GETTING PEOPLE</p>
+                        <p class="color-green">HEALTHIER FASTER</p>
+                    </div>
+                </div>
+                <div class="col-xl-7 offset-xl-1 col-12 order-1 order-xl-2 mb-4 mb-xl-0">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h5 class="color-green">Legal</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.healthtrackrx.com/online-privacy-policy/">Privacy Policy</a></li>
+                                <li><a href="https://www.healthtrackrx.com/terms-of-use/">Terms of Use</a></li>
+                                <li><a href="https://www.healthtrackrx.com/about-us/compliance/">Compliance</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5 class="color-green">Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li>1400 I-35 W<br />
+                                    Denton, TX 76207
+                                </li>
+                                <li><a href="tel:8662873218">(866) 287-3218</a></li>
+                                <li><a href="mailto:client.relations@healthtrackrx.com">client.relations@healthtrackrx.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-auto footer-custom-column">
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.healthtrackrx.com/htrxu/" class="color-green fw-bold">HTRx University</a></li>
+                                <li><a href="https://www.healthtrackrx.com/" class="color-green fw-bold">HealthTrackRx.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-12 text-md-end text-center mb-5 mb-md-0">
+                        <img class="footer-logo" src="/images/logo.png" alt="HealthTraxRX Logo" />
+                    </div>
+                    <div class="col-md-7 offset-md-1 col-12 text-md-start text-center">
+                        &copy; Copyright 2025 HealthTraxRX. All rights reserved.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
 
-<section class="to-top-container">
-    <a href="#" id="toTop" class="to-top-link">
-        <span id="to-top-label" class="screen-reader-text">Go to Top</span>
-    </a>
-</section>
 <!-- Bootstrap JS Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>

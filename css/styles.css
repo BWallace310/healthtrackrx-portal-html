@@ -1,4 +1,5 @@
 body {
+    color: #333;
     font-family: "Public Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -6,24 +7,233 @@ body {
     font-style: normal;
 }
 
-.color-white { color: #fff;}
-.color-green { color: #00b2a9; }
+h2 {
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 55px;
+}
 
+img {max-width: 100%;}
+
+.color-white { color: #fff !important; }
+.color-green { color: #00b2a9 !important; }
+.color-black { color: #333 !important; }
+
+.btn {
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    font-weight: 800;
+    min-width: 250px;
+}
+
+.btn.btn-primary {
+    background-color: #00b2a9 !important;
+    color: #333;
+}
+
+.btn.btn-secondary {
+    background: #333;
+    color: #fff;
+}
+
+header {
+    background: rgba(51, 51, 51, 1);
+    padding: 0 66px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 10px #00000067;
+}
+
+header .navbar {
+    height: 65px;
+}
+header .navbar .logo-img {
+    width: 194px;
+}
+
+.header-cta-text {
+    color: #00b2a9;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+section#hero {
+    background: url('/images/hero-background.jpg');
+    /*background-size: cover;*/
+    padding-top: 176px;
+    padding-bottom: 68px;
+}
+
+section#hero .login-container {
+    background: rgba(51, 51, 51, 0.9);
+    box-shadow: 0 3px 6px #0000007C;
+    padding: 137px 118.5px;
+}
+
+section#hero h1 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+section#hero .login-container .login-form {
+    margin-top: 40px;
+}
+
+section#hero .login-container .login-form label {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+}
+
+section#hero .login-container .login-form input {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #87a39d;
+    margin-bottom: 18px;
+}
+
+section#hero .login-container .login-btn {
+    background: #00B2A9;
+    border-radius: 20px;
+    border: none;
+    padding: 11px 63px;
+    opacity: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1rem;
+    color: #333333;
+    text-transform: uppercase;
+    margin-top: 38px;
+}
+
+section#hero .login-container a {
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 24px;
+}
+
+section#hero .login-container .login-links {
+    font-size: 14px;
+    display: flex;
+    margin-top: 53px;
+}
+section#hero .login-container .login-links .login-link-separator {
+    border-right: 2px solid #f0c500;
+    margin: 0 17px;
+    height: 24px;
+    display: inline-block;
+}
+
+/** Headline Section **/
+section#headline {
+    background: #B5E3D8;
+    padding: 106px 0 150px;
+}
+
+/** Resources Section **/
+section#resources {
+    margin-top: -38px;
+    padding-bottom: 30px;
+}
+
+section#resources .contact-support {
+    background: #00B2A9;
+    color: #333;
+    padding-top: 108px;
+    padding-bottom: 130px;
+}
+
+section#resources .tools-and-resources {
+    background: #333;
+    color: #fff;
+    padding-top: 108px;
+    padding-bottom: 130px;
+}
+
+section#resources .contact-support h2, section#resources .tools-and-resources h2 {
+    margin-bottom: 32px;
+}
 
 footer {
-    background: #212934;
+    background: #333333;
     color: #fff;
-    padding: 5% 30px 0;
+    padding: 89px 0 112px ;
 }
 
 footer .footer-big-text {
-    font-size: 7.5rem;
+    font-size: 4.375rem;
     font-style: italic;
     font-weight: 900;
     text-align: right;
 }
 
 footer .footer-big-text p {
-    line-height: 6rem;
+    line-height: 3.5rem;
     margin-bottom: 0;
+}
+
+footer .footer-logo {
+    width: 352px;
+}
+
+footer .footer-top h5 {font-size: 16px; line-height: 30px;}
+footer .footer-top a {
+    text-decoration: none;
+    color: #fff;
+}
+footer .footer-top ul.list-unstyled {margin-bottom: 0;}
+footer .footer-top ul.list-unstyled li {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+footer .footer-top ul.list-unstyled li:last-of-type {
+    margin-bottom: 0;
+}
+
+footer .footer-top .footer-custom-column {
+    border-left: 2px solid #87a39d;
+}
+
+footer .footer-bottom {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 28px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 95%
+    }
+}
+@media (max-width: 767px) {
+    section#hero {
+        padding-top: 65px;
+        padding-bottom: 0;
+    }
+    section#hero .container {
+        padding:0;
+        max-width: 100%
+    }
+    section#hero .login-container {
+        background: #333;
+        padding: 91px 28px;
+    }
+
+    section#resources .container {
+
+    }
+
+    footer .footer-top .footer-custom-column {
+        border-left: 0;
+    }
 }
