@@ -283,6 +283,10 @@ footer .footer-bottom {
         padding: 91px 62px 73px;
     }
 
+    footer {
+        padding: 82px 0 74px;
+    }
+
     footer .footer-top .footer-big-text {
         font-size: 67px;
         line-height: 63px;
@@ -337,6 +341,10 @@ footer .footer-bottom {
     section#resources .contact-support,
     section#resources .tools-and-resources {
         padding: 42px 0
+    }
+
+    footer {
+        padding: 51px 0 50px;
     }
 
     footer .footer-top .footer-custom-column {
