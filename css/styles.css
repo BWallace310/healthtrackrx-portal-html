@@ -70,7 +70,7 @@ section#hero {
 section#hero .login-container {
     background: rgba(51, 51, 51, 0.9);
     box-shadow: 0 3px 6px #0000007C;
-    padding: 137px 118.5px;
+    padding: 137px 80px;
 }
 
 section#hero h1 {
@@ -201,6 +201,7 @@ footer .footer-top ul.list-unstyled li:last-of-type {
 
 footer .footer-top .footer-custom-column {
     border-left: 2px solid #87a39d;
+    padding-left: 1.2rem;
 }
 
 footer .footer-bottom {
@@ -210,14 +211,16 @@ footer .footer-bottom {
     margin-top: 28px;
 }
 
-@media (max-width: 991px) {
-    .container {
-        max-width: 95%
-    }
-}
 @media (max-width: 767px) {
     header {
         padding: 0 20px;
+    }
+    header .navbar .logo-img {
+        width: 160px;
+    }
+
+    .header-cta-text {
+        font-size: 12px;
     }
     section#hero {
         padding-top: 65px;
@@ -227,9 +230,20 @@ footer .footer-bottom {
         padding:0;
         max-width: 100%
     }
+
+    section#hero .container .row {
+        margin: 0;
+    }
+    section#hero .container .row .col-12 {
+        padding: 0;
+    }
     section#hero .login-container {
         background: #333;
         padding: 91px 28px;
+    }
+
+    section#hero h1 {
+        font-size: 40px;
     }
 
     section#resources .container {
@@ -238,5 +252,32 @@ footer .footer-bottom {
 
     footer .footer-top .footer-custom-column {
         border-left: 0;
+        padding-left: 12px;
+    }
+
+    footer .footer-top .footer-big-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 95%
+    }
+
+    section#hero .login-container {
+        background: rgba(51, 51, 51, 0.9);
+        box-shadow: 0 3px 6px #0000007C;
+        padding: 91px 62px 73px;
+    }
+
+    footer .footer-top .footer-big-text {
+        font-size: 67px;
+        line-height: 63px;
+        padding: 24px 0;
+    }
+
+    footer .footer-top .footer-big-text p {
+        line-height: 63px;
     }
 }
