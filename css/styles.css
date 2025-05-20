@@ -41,6 +41,10 @@ img {
     max-width: 100%;
 }
 
+a {
+    transition: var(--transition);
+}
+
 /* Utility Classes */
 .color-white { color: var(--color-white) !important; }
 .color-green { color: var(--color-primary) !important; }
@@ -59,19 +63,19 @@ img {
     transition: var(--transition);
 }
 
-.btn:hover {
-    background-color: var(--color-white);
-    color: var(--color-secondary);
-}
-
 .btn.btn-primary {
-    background-color: var(--color-primary) !important;
+    background-color: var(--color-primary);
     color: var(--color-secondary);
 }
 
 .btn.btn-secondary {
     background: var(--color-secondary);
     color: var(--color-white);
+}
+
+.btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
 }
 
 /* Header */
@@ -98,6 +102,10 @@ header .navbar .logo-img {
     font-weight: 600;
     line-height: 1.5rem;
     text-decoration: none;
+}
+
+.header-cta-text:hover {
+    color: var(--color-white);
 }
 
 /* Hero Section */
@@ -150,6 +158,12 @@ section#hero .login-container .login-btn {
     margin-top: 38px;
     padding: 11px 63px;
     text-transform: uppercase;
+    transition: var(--transition);
+}
+
+section#hero .login-container .login-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
 }
 
 section#hero .login-container a {
@@ -248,6 +262,11 @@ footer .footer-top a {
     color: var(--color-white);
 }
 
+footer .footer-top a:hover {
+    text-decoration: underline;
+}
+
+
 footer .footer-top ul.list-unstyled {
     margin-bottom: 0;
 }
@@ -264,6 +283,11 @@ footer .footer-top ul.list-unstyled li:last-of-type {
 footer .footer-top .footer-custom-column {
     border-left: 2px solid var(--color-border);
     padding-left: 1.2rem;
+}
+
+footer .footer-top .footer-custom-column a:hover {
+    text-decoration: none;
+    color: var(--color-yellow) !important;
 }
 
 footer .footer-bottom {
